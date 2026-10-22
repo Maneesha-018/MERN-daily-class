@@ -96,7 +96,35 @@
 //     console.log("hello")
 // },3000)
 // }
-let arr=[1,2,3,4,5,6,7]
-arr.forEach((n)=>{
-    console.log(n);
-})
+// let arr=[1,2,3,4,5,6,7]
+// arr.forEach((n)=>{
+//     console.log(n);
+// })
+
+
+// ******REST PERAMETER****//
+//  (...n) => "spread syntax"//
+// function add(...n){
+//     let sum=0;
+    // for(let val of n){
+//     for(let i=0;i<n.length;i++){
+//         sum=sum+n[i];
+//     }
+//     return sum;
+// }
+// let result = add(4,5,6);
+// console.log(result);
+
+//  function add(a,b,c){
+//     console.log(a+b+c)
+//  }
+//  let n=[20,30,40,50,60]
+//  add(...n)
+
+// function add(){
+//     for(let i=0;i<n.length-1;i++){
+//         console.log(n[i]);
+//     }
+//  }
+//  let n=[20,30,40,50,60]
+//  add(...n)
