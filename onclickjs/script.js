@@ -128,3 +128,44 @@
 //  }
 //  let n=[20,30,40,50,60]
 //  add(...n)
+
+// let arr=[10,20,30]
+// let copy = arr;
+// copy.push(30)
+// console.log(arr)
+// console.log(copy)//{ if we modify simple copyed array element then both original array and copyed array will modified }//
+
+
+// let arr=[10,20,30]
+// let copy = [...arr]
+// copy.push(30);
+// console.log(arr)
+// console.log(copy)//{if we modify spread copyed array element then only copyed array will modified }//
+
+// let arr = [10,20,30]
+// let number = [40,50,60]
+// let combined = [arr,number]
+// console.log(combined)//{if we combined simple array element then the output will be [[10,20,30],[40,50,60]] like this.}//
+
+// let arr = [10,20,30]
+// let number = [40,50,60]
+// let combined = [...arr,...number]
+// console.log(combined)//{if we combined spread array element then the output will be [10,20,30,40,50,60] like this.}//
+
+// let arr = [10,20,30,40];
+// console.log(Math.max(arr));//{if we try to extract maximum number from the arr in this way output will be NaN}//
+
+// let arr = [10,20,30,40];
+// console.log(Math.max(...arr))//{if we try to extract maximum number from the arr using spread expression the output will be 40}//
+
+// let student = {
+//     name:"maneesha",
+//     age:"18"
+// }
+// let student1 ={
+//     course:"agrima",
+
+//     marks:"18"
+// }
+// let combine = {...student,...student1}
+// console.log(combine)//{variable name of both object must be diffrent to combin both object}//
