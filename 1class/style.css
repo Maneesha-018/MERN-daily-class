@@ -1,0 +1,59 @@
+/* .hello{
+    color: rgb(188, 19, 165);
+}
+p{
+    font-style: italic;
+}
+#greet{
+    background-color: blue;
+}
+*{
+    background-color: brown;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Caacupe+One&family=Idiqlat:wght@200;300;400&family=Noto+Sans+Sundanese:wght@400..700&display=swap');
+
+ body{
+    background-color:#aff000;
+
+ }
+ #hello{
+    text-align:center;
+    font-family:Impact;
+    text-decoration:line-through;
+ }
+ a{
+    text-decoration:dotted underline;
+ }
+ #prac{
+  font-family: "Caacupe One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#fontsize{
+    font-size:large;
+    font-weight:600;
+    font-style: italic;
+    /* letter-spacing: 2px; */
+    word-spacing: 2px;
+    line-height:50px;
+    font-size:30px;
+}
+#parent{
+    background-color: red;
+    width:50vh;
+    
+}
+#child{
+    background-color:blue;
+    width:50%;
+}
+
+
+

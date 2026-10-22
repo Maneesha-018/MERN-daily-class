@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+    min-height:100vh; 
+    display: grid;
+     grid-template-columns:220px 1fr;
+    grid-template-rows: 70px 1fr 50px;
+    grid-template-areas:"header header" "sidebar main" "footer footer";
+    
+}
+.header{
+    background-color: black;
+    color:white;
+    padding: 20px;
+    text-align: center;
+    grid-area: header;
+}
+.sidebar{
+    background-color:black;
+    color:white;
+    padding: 20px;
+    display: grid;
+    grid-area: sidebar;
+}
+
+

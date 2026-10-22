@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>LearnHub - Student Platform</title>
+
+    <link rel="stylesheet" href="class5.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            🎓 LearnHub
+        </div>
+
+
+        <nav class="nav-links">
+
+            <a href="#home">Home</a>
+
+            <a href="#courses">Courses</a>
+
+            <a href="#dashboard">Dashboard</a>
+
+            <a href="#chat">Chat</a>
+
+        </nav>
+
+
+        <button
+            class="nav-login"
+            onclick="showLogin()"
+        >
+            Login
+        </button>
+
+    </header>
+
+
+
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+
+    <main>
+
+        <section
+            class="hero"
+            id="home"
+        >
+
+            <div class="hero-content">
+
+                <span class="hero-tag">
+                    🚀 Learn • Practice • Grow
+                </span>
+
+
+                <h1>
+                    Build your skills.
+                    <br>
+                    Build your future.
+                </h1>
+
+
+                <p>
+                    Learn web development through
+                    practical courses, projects and
+                    real-world practice.
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="#courses"
+                        class="primary-btn"
+                    >
+                        Start Learning
+                    </a>
+
+
+                    <a
+                        href="#dashboard"
+                        class="secondary-btn"
+                    >
+                        View Dashboard
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Hero Progress Card -->
+
+            <div class="hero-card">
+
+                <div class="hero-card-header">
+
+                    <span>
+                        📊
+                    </span>
+
+                    <span>
+                        Your Progress
+                    </span>
+
+                </div>
+
+
+                <h2>
+                    85%
+                </h2>
+
+
+                <p>
+                    Overall Course Progress
+                </p>
+
+
+                <div class="progress">
+
+                    <div
+                        class="progress-fill"
+                        style="width: 85%;"
+                    ></div>
+
+                </div>
+
+
+                <div class="hero-stats">
+
+                    <div>
+                        <strong>5</strong>
+                        <span>Courses</span>
+                    </div>
+
+
+                    <div>
+                        <strong>12</strong>
+                        <span>Tasks</span>
+                    </div>
+
+
+                    <div>
+                        <strong>85%</strong>
+                        <span>Score</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             COURSE SECTION
+        ========================== -->
+
+        <section
+            class="section"
+            id="courses"
+        >
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-tag">
+                        LEARN
+                    </span>
+
+                    <h2>
+                        Popular Courses
+                    </h2>
+
+                </div>
+
+
+                <a href="#">
+                    View All →
+                </a>
+
+            </div>
+
+
+
+            <div class="course-container">
+
+
+                <!-- Course 1 -->
+
+                <article class="course-card">
+
+                    <div class="course-icon html">
+                        HTML
+                    </div>
+
+
+                    <h3>
+                        HTML Fundamentals
+                    </h3>
+
+
+                    <p>
+                        Learn the structure of
+                        modern web pages.
+                    </p>
+
+
+                    <div class="course-info">
+
+                        <span>
+                            12 Lessons
+                        </span>
+
+                        <span>
+                            Beginner
+                        </span>
+
+                    </div>
+
+
+                    <div class="progress">
+
+                        <div
+                            class="progress-fill"
+                            style="width: 80%;"
+                        ></div>
+
+                    </div>
+
+
+                    <div class="course-bottom">
+
+                        <span>
+                            80% Complete
+                        </span>
+
+                        <button>
+                            Continue
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- Course 2 -->
+
+                <article class="course-card">
+
+                    <div class="course-icon css">
+                        CSS
+                    </div>
+
+
+                    <h3>
+                        CSS & Flexbox
+                    </h3>
+
+
+                    <p>
+                        Build beautiful responsive
+                        layouts using CSS.
+                    </p>
+
+
+                    <div class="course-info">
+
+                        <span>
+                            18 Lessons
+                        </span>
+
+                        <span>
+                            Intermediate
+                        </span>
+
+                    </div>
+
+
+                    <div class="progress">
+
+                        <div
+                            class="progress-fill"
+                            style="width: 65%;"
+                        ></div>
+
+                    </div>
+
+
+                    <div class="course-bottom">
+
+                        <span>
+                            65% Complete
+                        </span>
+
+                        <button>
+                            Continue
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- Course 3 -->
+
+                <article class="course-card">
+
+                    <div class="course-icon js">
+                        JS
+                    </div>
+
+
+                    <h3>
+                        JavaScript
+                    </h3>
+
+
+                    <p>
+                        Learn programming fundamentals
+                        and DOM manipulation.
+                    </p>
+
+
+                    <div class="course-info">
+
+                        <span>
+                            25 Lessons
+                        </span>
+
+                        <span>
+                            Advanced
+                        </span>
+
+                    </div>
+
+
+                    <div class="progress">
+
+                        <div
+                            class="progress-fill"
+                            style="width: 40%;"
+                        ></div>
+
+                    </div>
+
+
+                    <div class="course-bottom">
+
+                        <span>
+                            40% Complete
+                        </span>
+
+                        <button>
+                            Continue
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             DASHBOARD
+        ========================== -->
+
+        <section
+            class="dashboard-section"
+            id="dashboard"
+        >
+
+            <div class="dashboard-layout">
+
+
+                <!-- Sidebar -->
+
+                <aside class="sidebar">
+
+                    <h3>
+                        Dashboard
+                    </h3>
+
+
+                    <a
+                        href="#"
+                        class="active"
+                    >
+                        🏠 Overview
+                    </a>
+
+
+                    <a href="#">
+                        📚 My Courses
+                    </a>
+
+
+                    <a href="#">
+                        📝 Assignments
+                    </a>
+
+
+                    <a href="#">
+                        📊 Results
+                    </a>
+
+
+                    <a href="#">
+                        ⚙️ Settings
+                    </a>
+
+                </aside>
+
+
+
+                <!-- Dashboard Content -->
+
+                <div class="dashboard-content">
+
+                    <div class="dashboard-header">
+
+                        <div>
+
+                            <span class="section-tag">
+                                DASHBOARD
+                            </span>
+
+                            <h2>
+                                Welcome back, Student 👋
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Statistics -->
+
+                    <div class="stats">
+
+
+                        <div class="stat-card">
+
+                            <span class="stat-icon">
+                                📚
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    5
+                                </strong>
+
+                                <p>
+                                    Active Courses
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="stat-card">
+
+                            <span class="stat-icon">
+                                📝
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    12
+                                </strong>
+
+                                <p>
+                                    Assignments
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="stat-card">
+
+                            <span class="stat-icon">
+                                ⭐
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    85%
+                                </strong>
+
+                                <p>
+                                    Average Score
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- Recent Activity -->
+
+                    <div class="activity">
+
+                        <div class="activity-header">
+
+                            <h3>
+                                Recent Activity
+                            </h3>
+
+                            <a href="#">
+                                View All
+                            </a>
+
+                        </div>
+
+
+                        <div class="activity-item">
+
+                            <span>
+                                ✅
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Completed CSS Flexbox
+                                </strong>
+
+                                <p>
+                                    2 hours ago
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="activity-item">
+
+                            <span>
+                                📝
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Submitted JavaScript Assignment
+                                </strong>
+
+                                <p>
+                                    Yesterday
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="activity-item">
+
+                            <span>
+                                🎯
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Started React Course
+                                </strong>
+
+                                <p>
+                                    2 days ago
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             CHAT SECTION
+        ========================== -->
+
+        <section
+            class="section"
+            id="chat"
+        >
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-tag">
+                        COMMUNICATION
+                    </span>
+
+                    <h2>
+                        Student Chat
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="chat-container">
+
+
+                <!-- Contacts -->
+
+                <aside class="contacts">
+
+                    <h3>
+                        Contacts
+                    </h3>
+
+
+                    <div class="contact active-contact">
+
+                        <span class="avatar">
+                            R
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Rahul
+                            </strong>
+
+                            <p>
+                                Online
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact">
+
+                        <span class="avatar">
+                            A
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Aman
+                            </strong>
+
+                            <p>
+                                Offline
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact">
+
+                        <span class="avatar">
+                            P
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Priya
+                            </strong>
+
+                            <p>
+                                Online
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </aside>
+
+
+
+                <!-- Chat Area -->
+
+                <div class="chat-area">
+
+
+                    <div class="chat-header">
+
+                        <span class="avatar">
+                            R
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Rahul
+                            </strong>
+
+                            <p>
+                                Online
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="messages">
+
+                        <div class="message received">
+                            Hello! 👋
+                        </div>
+
+
+                        <div class="message sent">
+                            Hi Rahul! How are you?
+                        </div>
+
+
+                        <div class="message received">
+                            I am good. Are you
+                            preparing for the exam?
+                        </div>
+
+
+                        <div class="message sent">
+                            Yes! I am practicing
+                            Flexbox today.
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="message-input">
+
+                        <input
+                            type="text"
+                            placeholder="Type a message..."
+                        >
+
+                        <button>
+                            ➤
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             LOGIN CARD
+        ========================== -->
+
+        <section class="login-section">
+
+            <div class="login-card">
+
+                <div class="login-icon">
+                    🔐
+                </div>
+
+                <h2>
+                    Student Login
+                </h2>
+
+                <p>
+                    Login to continue learning.
+                </p>
+
+
+                <form>
+
+                    <input
+                        type="email"
+                        placeholder="Email Address"
+                    >
+
+
+                    <input
+                        type="password"
+                        placeholder="Password"
+                    >
+
+
+                    <button
+                        type="submit"
+                        class="primary-btn full-btn"
+                    >
+                        Login
+                    </button>
+
+                </form>
+
+
+                <a href="#">
+                    Forgot Password?
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <p>
+            © 2026 LearnHub. All rights reserved.
+        </p>
+
+
+        <div class="footer-links">
+
+            <a href="#">
+                Privacy
+            </a>
+
+            <a href="#">
+                Terms
+            </a>
+
+            <a href="#">
+                Contact
+            </a>
+
+        </div>
+
+    </footer>
+
+
+
+    <script>
+
+        function showLogin() {
+
+            document
+                .querySelector(".login-section")
+                .scrollIntoView({
+                    behavior: "smooth"
+                });
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

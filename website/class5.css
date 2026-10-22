@@ -1,0 +1,1493 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: #f5f7fb;
+
+    color: #1f2937;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+button {
+    font-family: inherit;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    height: 70px;
+
+    background: white;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    padding: 0 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+}
+
+
+.logo {
+    font-size: 22px;
+
+    font-weight: 700;
+
+    color: #111827;
+
+   
+}
+
+
+.nav-links {
+    display: flex;
+
+    align-items: center;
+
+    gap: 28px;
+}
+
+
+.nav-links a {
+    color: #4b5563;
+
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+
+.nav-login {
+    border: none;
+
+    background: #2563eb;
+
+    color: white;
+
+    padding: 9px 18px;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+}
+
+
+.nav-login:hover {
+    background: #1d4ed8;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 520px;
+
+    padding: 70px 7%;
+
+    background: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 60px;
+}
+
+
+.hero-content {
+    flex: 1;
+
+    min-width: 0;
+
+    max-width: 650px;
+}
+
+
+.hero-tag,
+.section-tag {
+    color: #2563eb;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+.hero-tag {
+    display: inline-block;
+
+    margin-bottom: 18px;
+}
+
+
+.hero h1 {
+    font-size: clamp(40px, 5vw, 64px);
+
+    line-height: 1.05;
+
+    color: #111827;
+
+    margin-bottom: 20px;
+}
+
+
+.hero-content > p:not(.hero-tag) {
+    color: #6b7280;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    max-width: 540px;
+
+    margin-bottom: 28px;
+}
+
+
+.hero-buttons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+}
+
+
+.primary-btn,
+.secondary-btn {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 11px 18px;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+}
+
+
+.primary-btn {
+    border: none;
+
+    background: #2563eb;
+
+    color: white;
+}
+
+
+.primary-btn:hover {
+    background: #1d4ed8;
+}
+
+
+.secondary-btn {
+    border: 1px solid #d1d5db;
+
+    color: #374151;
+
+    background: white;
+}
+
+
+.secondary-btn:hover {
+    background: #f3f4f6;
+}
+
+
+/* =========================
+   HERO CARD
+========================= */
+
+.hero-card {
+    flex: 0 1 350px;
+
+    padding: 28px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 15px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+
+.hero-card-header {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: #4b5563;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 25px;
+}
+
+
+.hero-card h2 {
+    font-size: 42px;
+
+    color: #111827;
+
+    margin-bottom: 5px;
+}
+
+
+.hero-card > p {
+    color: #6b7280;
+
+    font-size: 13px;
+
+    margin-bottom: 15px;
+}
+
+
+.progress {
+    width: 100%;
+
+    height: 8px;
+
+    background: #e5e7eb;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    margin-bottom: 20px;
+}
+
+
+.progress-fill {
+    height: 100%;
+
+    background: #2563eb;
+
+    border-radius: inherit;
+}
+
+
+.hero-stats {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 15px;
+}
+
+
+.hero-stats div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+
+.hero-stats strong {
+    color: #111827;
+
+    font-size: 18px;
+}
+
+
+.hero-stats span {
+    color: #6b7280;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   GENERAL SECTION
+========================= */
+
+.section {
+    padding: 80px 7%;
+}
+
+
+.section-heading {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-bottom: 30px;
+}
+
+
+.section-heading h2 {
+    font-size: 30px;
+
+    color: #111827;
+
+    margin-top: 5px;
+}
+
+
+.section-heading > a {
+    color: #2563eb;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   COURSE CARDS
+========================= */
+
+.course-container {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+
+
+.course-card {
+    flex: 1 1 280px;
+
+    min-width: 0;
+
+    background: white;
+
+    padding: 25px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    transition: 0.2s;
+}
+
+
+.course-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
+}
+
+
+.course-icon {
+    width: 55px;
+
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 9px;
+
+    font-weight: 700;
+
+    font-size: 13px;
+
+    margin-bottom: 18px;
+}
+
+
+.course-icon.html {
+    background: #fff1ed;
+
+    color: #e34c26;
+}
+
+
+.course-icon.css {
+    background: #eff6ff;
+
+    color: #2563eb;
+}
+
+
+.course-icon.js {
+    background: #fef9c3;
+
+    color: #a16207;
+}
+
+
+.course-card h3 {
+    font-size: 18px;
+
+    margin-bottom: 8px;
+}
+
+
+.course-card > p {
+    color: #6b7280;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin-bottom: 15px;
+}
+
+
+.course-info {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+    margin-bottom: 15px;
+
+    color: #6b7280;
+
+    font-size: 12px;
+}
+
+
+.course-bottom {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+    margin-top: auto;
+}
+
+
+.course-bottom span {
+    color: #6b7280;
+
+    font-size: 12px;
+}
+
+
+.course-bottom button {
+    border: none;
+
+    background: #111827;
+
+    color: white;
+
+    padding: 8px 12px;
+
+    border-radius: 5px;
+
+    font-size: 12px;
+}
+
+
+.course-bottom button:hover {
+    background: #374151;
+}
+
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard-section {
+    padding: 0 7% 80px;
+}
+
+
+.dashboard-layout {
+    display: flex;
+
+    min-height: 450px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+}
+
+
+/* Sidebar */
+
+.sidebar {
+    width: 220px;
+
+    flex-shrink: 0;
+
+    padding: 25px 18px;
+
+    background: #f8fafc;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+
+    border-right: 1px solid #e5e7eb;
+}
+
+
+.sidebar h3 {
+    font-size: 14px;
+
+    color: #6b7280;
+
+    margin-bottom: 15px;
+
+    padding: 0 10px;
+}
+
+
+.sidebar a {
+    color: #4b5563;
+
+    padding: 11px;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+}
+
+
+.sidebar a:hover {
+    background: white;
+
+    color: #111827;
+}
+
+
+.sidebar a.active {
+    background: #2563eb;
+
+    color: white;
+}
+
+
+/* Dashboard Content */
+
+.dashboard-content {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 35px;
+}
+
+
+.dashboard-header {
+    margin-bottom: 25px;
+}
+
+
+.dashboard-header h2 {
+    font-size: 24px;
+
+    margin-top: 5px;
+}
+
+
+/* Statistics */
+
+.stats {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    margin-bottom: 30px;
+}
+
+
+.stat-card {
+    flex: 1 1 170px;
+
+    padding: 18px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.stat-icon {
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #eff6ff;
+
+    border-radius: 8px;
+}
+
+
+.stat-card strong {
+    display: block;
+
+    font-size: 22px;
+}
+
+
+.stat-card p {
+    color: #6b7280;
+
+    font-size: 12px;
+
+    margin-top: 3px;
+}
+
+
+/* Activity */
+
+.activity {
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+
+    padding: 20px;
+}
+
+
+.activity-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 15px;
+}
+
+
+.activity-header h3 {
+    font-size: 16px;
+}
+
+
+.activity-header a {
+    color: #2563eb;
+
+    font-size: 12px;
+}
+
+
+.activity-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 12px 0;
+
+    border-top: 1px solid #f0f0f0;
+}
+
+
+.activity-item > span {
+    width: 35px;
+
+    height: 35px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #f3f4f6;
+
+    border-radius: 50%;
+}
+
+
+.activity-item strong {
+    font-size: 13px;
+}
+
+
+.activity-item p {
+    color: #9ca3af;
+
+    font-size: 11px;
+
+    margin-top: 3px;
+}
+
+
+/* =========================
+   CHAT
+========================= */
+
+.chat-container {
+    display: flex;
+
+    height: 500px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+}
+
+
+/* Contacts */
+
+.contacts {
+    width: 240px;
+
+    flex-shrink: 0;
+
+    padding: 20px;
+
+    background: #f8fafc;
+
+    border-right: 1px solid #e5e7eb;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+
+.contacts h3 {
+    font-size: 16px;
+
+    margin-bottom: 10px;
+}
+
+
+.contact {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 10px;
+
+    border-radius: 8px;
+}
+
+
+.contact:hover,
+.active-contact {
+    background: white;
+}
+
+
+.avatar {
+    width: 38px;
+
+    height: 38px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #2563eb;
+
+    color: white;
+
+    border-radius: 50%;
+
+    font-weight: 600;
+}
+
+
+.contact strong,
+.chat-header strong {
+    font-size: 13px;
+}
+
+
+.contact p,
+.chat-header p {
+    color: #9ca3af;
+
+    font-size: 11px;
+}
+
+
+/* Chat Area */
+
+.chat-area {
+    flex: 1;
+
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.chat-header {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 15px 20px;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+.messages {
+    flex: 1;
+
+    min-height: 0;
+
+    padding: 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-end;
+
+    gap: 10px;
+
+    overflow-y: auto;
+}
+
+
+.message {
+    max-width: 300px;
+
+    padding: 10px 14px;
+
+    border-radius: 12px;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+.received {
+    align-self: flex-start;
+
+    background: #f3f4f6;
+
+    color: #374151;
+}
+
+
+.sent {
+    align-self: flex-end;
+
+    background: #2563eb;
+
+    color: white;
+}
+
+
+/* Message Input */
+
+.message-input {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 15px;
+
+    border-top: 1px solid #e5e7eb;
+}
+
+
+.message-input input {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 10px 12px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 7px;
+
+    outline: none;
+}
+
+
+.message-input input:focus {
+    border-color: #2563eb;
+}
+
+
+.message-input button {
+    width: 40px;
+
+    height: 40px;
+
+    border: none;
+
+    background: #2563eb;
+
+    color: white;
+
+    border-radius: 7px;
+}
+
+
+/* =========================
+   LOGIN
+========================= */
+
+.login-section {
+    min-height: 550px;
+
+    padding: 80px 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #f8fafc;
+}
+
+
+.login-card {
+    width: 100%;
+
+    max-width: 380px;
+
+    padding: 35px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+
+.login-icon {
+    width: 55px;
+
+    height: 55px;
+
+    margin: 0 auto 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #eff6ff;
+
+    border-radius: 50%;
+
+    font-size: 22px;
+}
+
+
+.login-card h2 {
+    margin-bottom: 5px;
+}
+
+
+.login-card > p {
+    color: #6b7280;
+
+    font-size: 13px;
+
+    margin-bottom: 25px;
+}
+
+
+.login-card form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+.login-card input {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 6px;
+
+    outline: none;
+}
+
+
+.login-card input:focus {
+    border-color: #2563eb;
+}
+
+
+.full-btn {
+    width: 100%;
+
+    margin-top: 5px;
+
+    cursor: pointer;
+}
+
+
+.login-card > a {
+    display: inline-block;
+
+    margin-top: 18px;
+
+    color: #2563eb;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    padding: 25px 7%;
+
+    background: white;
+
+    border-top: 1px solid #e5e7eb;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    color: #6b7280;
+
+    font-size: 13px;
+}
+
+
+.footer-links {
+    display: flex;
+
+    gap: 20px;
+}
+
+
+.footer-links a {
+    color: #6b7280;
+}
+
+
+.footer-links a:hover {
+    color: #111827;
+}
+
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (max-width: 900px) {
+
+
+    /* Navbar */
+
+    .navbar {
+        padding: 0 25px;
+    }
+
+
+    .nav-links {
+        gap: 15px;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        padding: 60px 5%;
+
+        gap: 35px;
+    }
+
+
+    .hero-card {
+        flex-basis: 300px;
+    }
+
+
+    /* Sections */
+
+    .section {
+        padding: 60px 5%;
+    }
+
+
+    .dashboard-section {
+        padding: 0 5% 60px;
+    }
+
+
+    /* Sidebar */
+
+    .sidebar {
+        width: 190px;
+    }
+
+
+    .dashboard-content {
+        padding: 25px;
+    }
+
+
+    /* Chat */
+
+    .contacts {
+        width: 200px;
+    }
+
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 600px) {
+
+
+    /* =====================
+       NAVBAR
+    ====================== */
+
+    .navbar {
+        height: 60px;
+
+        padding: 0 15px;
+    }
+
+
+    .logo {
+        font-size: 18px;
+    }
+
+
+    .nav-links {
+        display: none;
+    }
+
+
+    .nav-login {
+        padding: 7px 13px;
+
+        font-size: 12px;
+    }
+
+
+    /* =====================
+       HERO
+    ====================== */
+
+    .hero {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        text-align: center;
+
+        padding: 50px 20px;
+
+        gap: 35px;
+    }
+
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+
+    .hero-content > p:not(.hero-tag) {
+        font-size: 14px;
+
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+
+    .hero-card {
+        width: 100%;
+
+        flex: none;
+
+        text-align: left;
+    }
+
+
+    /* =====================
+       SECTION
+    ====================== */
+
+    .section {
+        padding: 55px 15px;
+    }
+
+
+    .section-heading {
+        align-items: flex-end;
+    }
+
+
+    .section-heading h2 {
+        font-size: 24px;
+    }
+
+
+    /* =====================
+       COURSES
+    ====================== */
+
+    .course-container {
+        flex-direction: column;
+    }
+
+
+    .course-card {
+        width: 100%;
+
+        flex: none;
+    }
+
+
+    /* =====================
+       DASHBOARD
+    ====================== */
+
+    .dashboard-section {
+        padding: 0 15px 55px;
+    }
+
+
+    .dashboard-layout {
+        flex-direction: column;
+    }
+
+
+    .sidebar {
+        width: 100%;
+
+        flex-direction: row;
+
+        overflow-x: auto;
+
+        padding: 10px;
+
+        border-right: none;
+
+        border-bottom: 1px solid #e5e7eb;
+    }
+
+
+    .sidebar h3 {
+        display: none;
+    }
+
+
+    .sidebar a {
+        flex-shrink: 0;
+
+        white-space: nowrap;
+
+        font-size: 12px;
+
+        padding: 8px 10px;
+    }
+
+
+    .dashboard-content {
+        padding: 20px;
+    }
+
+
+    .dashboard-header h2 {
+        font-size: 20px;
+    }
+
+
+    .stats {
+        flex-direction: column;
+    }
+
+
+    .stat-card {
+        width: 100%;
+
+        flex: none;
+    }
+
+
+    /* =====================
+       CHAT
+    ====================== */
+
+    .chat-container {
+        height: 550px;
+    }
+
+
+    .contacts {
+        display: none;
+    }
+
+
+    .chat-area {
+        width: 100%;
+    }
+
+
+    .message {
+        max-width: 75%;
+    }
+
+
+    /* =====================
+       LOGIN
+    ====================== */
+
+    .login-section {
+        min-height: 500px;
+
+        padding: 50px 15px;
+    }
+
+
+    .login-card {
+        padding: 25px 20px;
+    }
+
+
+    /* =====================
+       FOOTER
+    ====================== */
+
+    .footer {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 20px 15px;
+    }
+
+}

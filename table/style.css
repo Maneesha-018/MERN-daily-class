@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+h1{
+    color:blue;
+    background-color:red;
+    font-size: 50px;
+    font-weight:50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+h2{
+    color: rgb(104, 135, 245);
+}
+h3{color: blueviolet;
+
+}
+#heading{
+    color: brown;
+}
+#para{
+    color: chocolate;
+    }
+#hero{
+    font-weight:800;
+}
+#heroen{
+    font-size: large;
+}
+p{
+    color: blueviolet;
+}

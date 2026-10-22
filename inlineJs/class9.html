@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .box{
+            background-color: rgb(83, 231, 231);
+            color: red;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="flex items-center"> -->
+    <div class="grid grid-cols-1 md:grid-cols-2">
+        <div class="box">Home</div>
+        <div class="bg-blue-500 p-5 text-white text-center rounded-3xl mt-50 font-bold border border-red-500 hover:bg-red-500 transition duration-500 focus:">Home</div>
+        <div>
+          
+            <input type="text" placeholder="enter your name" class="focus:border-red-500 focus:outline-none" >
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+html,body{
+
+}
+h2{
+    font: size: 50px; ;
+}
+section{
+    text-align: center;
+    height: 150px;
+}
+.first{
+    background-color: rgb(110, 205, 228);
+}
+h3{
+   font-size:30px; 
+}
+.second{
+    background-color: aliceblue;
+}
+.third{
+    background-color:rgb(156, 145, 145);
+}
