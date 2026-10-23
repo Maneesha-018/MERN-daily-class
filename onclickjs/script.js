@@ -169,3 +169,14 @@
 // }
 // let combine = {...student,...student1}
 // console.log(combine)//{variable name of both object must be diffrent to combin both object}//
+
+//**push and unshift***//
+// let arr=[4,5,6];
+// arr.push(46);//{push is use to add element from ending}//
+// console.log(arr);
+// arr.unshift(8);//{unshift is used to add elemet from starting}//
+// console.log(arr);
+// arr.pop();//{pop is use to remove element from ending}//
+// console.log(arr);
+// arr.shift();//{shist is use to remove element from starting}//
+// console.log(arr);
