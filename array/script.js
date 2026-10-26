@@ -176,18 +176,19 @@
 // console.log(arr);
 // arr.unshift(8);//{unshift is used to add elemet from starting}//
 // console.log(arr);
+//**pop and shift**//
 // arr.pop();//{pop is use to remove element from ending}//
 // console.log(arr);
 // arr.shift();//{shist is use to remove element from starting}//
 // console.log(arr);
 
-// //***isArray function***//
+//***isArray function***//
 // let arr=54;
-let arr1=[4,5,6,7];
-console.log(Array.isArray(arr1));
+// let arr1=[4,5,6,7];
+// console.log(Array.isArray(arr1));
 // let arr2="hello";
 // function check(arr1){
-//     if(Array.isArray(item)){
+//     if(Array.isArray(arr)){
 //         return true;
 //     }
 //     return false;
@@ -196,3 +197,27 @@ console.log(Array.isArray(arr1));
 // console.log(arr);
 // console.log(arr1);
 // console.log(arr2);
+
+// let arr=[67,8,33] //**indexOF and concat**//
+// let arr1=[35,3,5]
+// console.log(arr.indexOf(80))
+// console.log(arr.concat(arr1))
+// console.log(arr.reverse()) //**.reverse:{reverse the elements of array}**//
+
+// let a="javascript"   //**reverse string value**//
+// console.log(a.split(""))
+// console.log(a.split("").reverse().join(""))
+
+// let n=[10,25,6,84,55]  //**min and max:{find minimum and maximum value from the arr using spread operator**//
+// console.log(Math.min(...n))
+// console.log(Math.max(...n))
+
+// let arr=[[67,8,35],[6,4,5]]  //**nested loop**/
+// for(let i=0;i<arr.length;i++){
+//     for(let val of arr[i]){
+//         console.log(val)
+//     }
+// }
+
+// let arr=[67,8,35] //**sort and arrow function{print elements of array in accending order}**//
+// console.log(arr.sort((a,z)=>a-z))
