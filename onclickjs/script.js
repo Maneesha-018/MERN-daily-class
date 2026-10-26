@@ -180,3 +180,19 @@
 // console.log(arr);
 // arr.shift();//{shist is use to remove element from starting}//
 // console.log(arr);
+
+// //***isArray function***//
+// let arr=54;
+let arr1=[4,5,6,7];
+console.log(Array.isArray(arr1));
+// let arr2="hello";
+// function check(arr1){
+//     if(Array.isArray(item)){
+//         return true;
+//     }
+//     return false;
+// }
+// check();
+// console.log(arr);
+// console.log(arr1);
+// console.log(arr2);
