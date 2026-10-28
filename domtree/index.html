@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><div class="card">
+    <h1 id="heading">hello</h1>
+    <h2 class="header">hello world</h2>
+    <h2 class="header"> hello world</h2>
+    <p>my first website</p>
+    </div>
+    <script>
+        // const head=document.getElementsByClassName("heading");
+        // console.log(head)
+        // console.log(head.length)
+        // console.log([0])
+        // console.log([1])
+        // console.log([2])
+        // const head = document.getElementsByClassNameId("heading");
+        // console.log(head)
+        // const head=document.querySelectorAll("p");
+        // console.log(head)
+        //**nested selector**//
+        let card=document.querySelector(".card")
+        let heading=card.querySelector("h1")
+        // console.log(heading)
+        if(card){
+            console.log("found")
+        }else{
+            console.log("not found")
+        }
+        // console.log(heading.textContent)
+        //  console.log(card.textContent)
+        //  heading.textContent="java script"
+        //  console.log(card.textContent)
+    </script>
+</body>
+</html>

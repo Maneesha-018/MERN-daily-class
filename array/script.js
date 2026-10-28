@@ -221,3 +221,44 @@
 
 // let arr=[67,8,35] //**sort and arrow function{print elements of array in accending order}**//
 // console.log(arr.sort((a,z)=>a-z))
+//  let s = "A man, a plan, a canal: Panama"
+//  s=s.toLowerCase();
+//  console.log(s);
+//  s = s.replaceAll(" ","").replaceAll(",","").replaceAll(":","");
+//  let t=s;
+//  s=s.split("");
+//  console.log(s);
+//  let s1;
+//  console.log(t);
+//  s1=s.reverse();
+//  console.log(s1);
+//  s1=s1.join("");
+//  console.log(s1);
+//  console.log(t);
+//  if(s1==t){
+//     console.log("yes");
+//  }
+//  else{
+//     console.log("no");
+//  }
+// function student(name,age){
+//     return{
+//         name:name,
+//         age:age
+//     } 
+//     let detail=student("rahul",24);
+//     console.log(detail);
+// }
+  //**rename and default**//
+let student={
+    name:"rahul",
+    age:24
+}
+let {name,age}=student;
+console.log(name);
+console.log(age);
+
+
+
+
+ 
