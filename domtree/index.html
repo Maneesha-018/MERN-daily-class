@@ -1,6 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <title>Profile Card</title>
+  <style>
+    .card {
+      border: 1px solid #aaa;
+      padding: 16px;
+      margin: 10px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Student Profile</h1>
+  <div id="card"></div>
+
+  <script>
+    const user = {
+      name: "Riya",
+      city: "Delhi",
+      course: "BCA"
+    };
+
+    const card = document.querySelector("#card");
+
+    card.innerHTML = `
+      <div class="card">
+        <h2>${user.name}</h2>
+        <p>City: ${user.city}</p>
+        <p>Course: ${user.course}</p>
+      </div>
+    `;
+  </script>
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Content Update</title>
+</head>
+<body>
+  <h1 id="title">Original Heading</h1>
+
+  <div id="textBox"></div>
+  <div id="htmlBox"></div>
+
+  <button id="textBtn">Use textContent</button>
+  <button id="htmlBtn">Use innerHTML</button>
+
+  <script>
+    const title = document.querySelector("#title");
+    const textBox = document.querySelector("#textBox");
+    const htmlBox = document.querySelector("#htmlBox");
+
+    document.querySelector("#textBtn")
+      .addEventListener("click", () => {
+        title.textContent = "Heading Updated!";
+        textBox.textContent = "<strong>Hello</strong>";
+      });
+
+    document.querySelector("#htmlBtn")
+      .addEventListener("click", () => {
+        htmlBox.innerHTML = "<strong>Hello</strong>";
+      });
+  </script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Selection Methods</title>
+</head>
+<body>
+  <h1 id="title">My Profile</h1>
+
+  <p class="info">Name: Riya</p>
+  <p class="info">City: Delhi</p>
+
+  <button id="selectBtn">Select Elements</button>
+
+  <script>
+    document.querySelector("#selectBtn")
+      .addEventListener("click", () => {
+        // 1. Select by ID
+        const title = document.getElementById("title");
+        console.log("By ID:", title.textContent);
+
+        // 2. Select by class
+        const infos = document.getElementsByClassName("info");
+        console.log("By class:", infos.length);
+
+        // 3. Select by tag
+        const paragraphs = document.getElementsByTagName("p");
+        console.log("By tag:", paragraphs.length);
+
+        // 4. Select first matching element
+        const firstInfo = document.querySelector(".info");
+        console.log("First match:", firstInfo.textContent);
+
+        // 5. Select all matching elements
+        const allInfos = document.querySelectorAll(".info");
+
+        allInfos.forEach((item) => {
+          console.log(item.textContent);
+        });
+      });
+  </script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -11,8 +124,8 @@
     <h2 class="header"> hello world</h2>
     <p>my first website</p>
     </div>
-    <script>
-        // const head=document.getElementsByClassName("heading");
+    <script> -->
+        <!-- // const head=document.getElementsByClassName("heading");
         // console.log(head)
         // console.log(head.length)
         // console.log([0])
@@ -23,18 +136,18 @@
         // const head=document.querySelectorAll("p");
         // console.log(head)
         //**nested selector**//
-        let card=document.querySelector(".card")
-        let heading=card.querySelector("h1")
-        // console.log(heading)
-        if(card){
-            console.log("found")
-        }else{
-            console.log("not found")
-        }
+        // let card=document.querySelector(".card")
+        // let heading=card.querySelector("h1")
+        // // console.log(heading)
+        // if(card){
+        //     console.log("found")
+        // }else{
+        //     console.log("not found")
+        // }
         // console.log(heading.textContent)
         //  console.log(card.textContent)
         //  heading.textContent="java script"
-        //  console.log(card.textContent)
-    </script>
+        //  console.log(card.textContent) -->
+    <!-- </script>
 </body>
-</html>
+</html> -->
