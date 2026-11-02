@@ -156,11 +156,26 @@
     let categoryText=document.createElement("p")
     categoryText.textContent=`category:${category}`;
 
+    let image=document.createElement("img")
+    if(category == "Electronics"){
+    image.src = "Screenshot 2026-11-02 100953.png";}
+    if(category == "Clothing"){
+      image.src="Screenshot 2026-11-02 102040.png"
+    }
+    if(category == "Books"){
+      image.src="Screenshot 2026-11-02 102416.png"
+    }
+
+      image.style.width="100%"
+      image.style.height="150px"
+      image.style.objectFit="cover"
+
+
     let deleteBtn =document.createElement("button")
     deleteBtn.classList.add("delete-btn")
     deleteBtn.textContent="delete"
 
-    card.append(title,priceText,categoryText,deleteBtn)
+    card.append(image,title,priceText,categoryText,deleteBtn)
 
 return card;
 
