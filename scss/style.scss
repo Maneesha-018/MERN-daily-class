@@ -1,0 +1,21 @@
+$abc=red;
+h1{
+    color:$abc;
+}
+ul{
+    li{
+        color:red;
+    }
+}
+@mixin b($bg,$color){
+    background-color:$bg;
+    color:$color;
+}
+.primary-btn{
+    @include b(red,green);
+}
+@for $i from 1 through 3{
+    .item-#{$i}{
+        width:20px*$i;
+    }
+}

@@ -13,25 +13,61 @@
   </style>
 </head>
 <body>
-  <h1>Student Profile</h1>
+  <h1></h1>
   <div id="card"></div>
 
   <script>
-    const user = {
-      name: "Riya",
-      city: "Delhi",
-      course: "BCA"
-    };
+    // const user = {
+    //   name: "Riya",
+    //   city: "Delhi",
+    //   course: "BCA"
+    // };
 
-    const card = document.querySelector("#card");
+    // const card = document.querySelector("#card");
 
-    card.innerHTML = `
-      <div class="card">
-        <h2>${user.name}</h2>
-        <p>City: ${user.city}</p>
-        <p>Course: ${user.course}</p>
-      </div>
-    `;
+    // card.innerHTML = `
+    //   <div class="card">
+    //     <h2>${user.name}</h2>
+    //     <p>City: ${user.city}</p>
+    //     <p>Course: ${user.course}</p>
+    //   </div>
+    // `;
+    // localStorage.setItem("name","manu")
+    // console.log(localStorage.getItem("name"))
+    // sessionStorage.setItem("name","tasu")
+    // console.log(sessionStorage.getItem("name"))
+
+      // localStorage.setItem("age",20)
+      // let age = console.log(localStorage.getItem("age"))
+      // console.log("age")
+      // console.log(typeof ("age"))
+
+      // let name=localStorage.setItem("name")||"rahul";
+      // console.log(name);
+
+      let student=[
+        {name:"rahul",age:20},
+        {name:"amit",age:30}
+      ]
+     localStorage.setItem("student",JSON.stringify(student));
+
+    let data=(localStorage.getItem("student"));
+    let studentdata=JSON.parse(data);
+    // console.log(data);
+    // console.log(studentdata);
+    // console.log(typeof data);
+    // console.log(typeof studentdata);
+    
+    //   console.log(studentdata[0].name)
+    
+    let updatestudent={
+      ...studentdata[1],
+      age:26
+    }
+    studentdata[0]=updatestudent;
+    localStorage.setItem("student",JSON.stringify(updatestudent))
+
+    console.log(studentdata[0].name)
   </script>
 </body>
 </html>
