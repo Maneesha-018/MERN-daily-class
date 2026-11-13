@@ -3,6 +3,9 @@
     padding:0px;
     box-sizing:0px;
 }
+body{
+    background-color:rgb(246, 214, 246) ;
+}
 .container{
     margin:100px auto;
     padding: 20px;
@@ -13,7 +16,9 @@
     border: solid blueviolet;
     border-radius:20px;
     font-family:Arial, Helvetica, sans-serif ;
-    color: rgb(239, 15, 172);
+    color:rgb(119, 18, 212);
+    line-height: 1.5;
+    background-color: white;
 }
 img{
     border-radius:50%;
@@ -24,8 +29,12 @@ h2{
     margin: 10px;
     color:blueviolet;
 }
+h3{
+    color: rgb(67, 21, 109);
+}
 p{
     margin: 15px;
+    color: black;
 }
 button{
     border-radius: 5px;
