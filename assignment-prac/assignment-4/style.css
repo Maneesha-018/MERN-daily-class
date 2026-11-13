@@ -1,0 +1,37 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:0px;
+}
+.container{
+    margin:100px auto;
+    padding: 20px;
+    width: 300px;
+    box-shadow:0 4px 12px;
+    /* background-color: aqua; */
+    text-align:center;
+    border: solid blueviolet;
+    border-radius:20px;
+    font-family:Arial, Helvetica, sans-serif ;
+    color: rgb(239, 15, 172);
+}
+img{
+    border-radius:50%;
+    width:150px;
+    border: solid blueviolet;
+}
+h2{
+    margin: 10px;
+    color:blueviolet;
+}
+p{
+    margin: 15px;
+}
+button{
+    border-radius: 5px;
+    padding:5px 10px;
+}
+button:hover{
+    background-color: blueviolet;
+    color: white;
+}
