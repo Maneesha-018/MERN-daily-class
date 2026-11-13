@@ -4,5 +4,25 @@
     box-sizing:0;
 }
 .outerline{
-    
+    width:650px;
+    margin:20px auto;
+    box-shadow:0 4px 12px;
+    padding:10px 30px;
+    line-height: 1.5;
+}
+.name{
+    text-align: center;
+}
+.contact{
+    display:flex;
+    justify-content: space-between;
+    font-weight:bold;
+    /* grid-template-columns: 1fr 1fr; */
+    /* text-align: center; */
+}
+h3{
+    padding-top:5px;
+}
+ul{
+    padding:0 20px;
 }
